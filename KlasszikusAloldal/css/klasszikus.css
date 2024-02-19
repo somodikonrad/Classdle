@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    color: white;
+}
+header
+{
+    display: flex;
+    justify-content: center;
+
+}
+img{
+    width: 25%;
+    
+}
+.nyil{
+    width: 4%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 50%;
+    border: 1px solid white;
+}
+.tulajdonsag{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.tulajdonsag h2{
+    margin-right: 20px;
+    
+}
+.asd{
+    display: flex;
+    justify-content: center;
+}
+main{
+    margin-top: 70px;
+}
