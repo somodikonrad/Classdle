@@ -1,7 +1,36 @@
-html{
+body{
     background-color: black;
 }
+
 .foKep{
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main h1{
+    border: 1px solid #B6904A;
+    background-color: #B6904A;
+    
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+   
+}
+
+footer{
+    background-color: #B6904A;
 }
