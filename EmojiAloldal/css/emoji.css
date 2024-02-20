@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+    
+img{
+    width: 25%;
+}
+
+
+.nyil{
+    width: 4%;
+}
+
+.nyilacska{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    margin-top: 70px;
+}
+
+.emojik{
+    background-color: #B9985C;
+    width: 400px;
+    border: 3px solid #B9985C;
+    padding: 5%;
+    margin: 13%;
+    border-radius: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #B9985C;
+    text-align: center;
+    font-weight: bold;
+}
