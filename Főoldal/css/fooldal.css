@@ -1,9 +1,13 @@
 body{
     background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .foKep{
-    width: 30%;
+    width: 400px;
     
 }
 
@@ -13,17 +17,50 @@ body{
     
 }
 
-main h1{
-    border: 1px solid #B6904A;
-    background-color: #B6904A;
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
-    text-align: center;
 }
 
-footer{
+button{
+    border: 1px solid #B6904A;
+    border-radius: 20px;
+    background-color: #B6904A;
+    width: 90px;
+    
+
+    
+}
+button img{
+    height: 50px;
+}
+
+.klasszikusGomb{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.emojiGomb{
     display: flex;
     justify-content: center;
 }
+
+.kepGomb{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #B6904A;
+    margin-top: auto;
+    
+    
+}
+
 
 header{
     display: flex;
@@ -31,6 +68,4 @@ header{
    
 }
 
-footer{
-    background-color: #B6904A;
-}
+
