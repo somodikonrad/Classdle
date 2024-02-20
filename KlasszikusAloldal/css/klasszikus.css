@@ -1,6 +1,8 @@
 body{
     background-color: black;
-    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 header
 {
@@ -9,15 +11,17 @@ header
 
 }
 img{
-    width: 25%;
+    width: 300px;
     
 }
 .nyil{
-    width: 4%;
+    width: 40px;
 }
 footer{
     display: flex;
     justify-content: center;
+    margin-top: auto;
+    background-color: #B6904A;
 }
 table{
     width: 50%;
@@ -28,16 +32,40 @@ table{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
+    color: #B6904A;
 }
 .tulajdonsag h2{
     margin-right: 20px;
     
 }
-.asd{
+.dropdown{
     display: flex;
     justify-content: center;
 }
 main{
     margin-top: 70px;
+}
+
+#tablazat{
+    margin: auto;
+    margin-top: 30px;
+    color: #B6904A;
+    margin-right: auto;
+}
+.gombeslogo{
+    display: flex;
+    justify-content: center;
+}
+footer img {
+    width: 5%;
+    height: 5%;
+}
+button{
+    background-color: #B6904A;
+    margin-top: 120px;
+    border-radius: 20px;
+}
+button img {
+    width: 70px;
 }
