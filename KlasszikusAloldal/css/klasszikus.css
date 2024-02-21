@@ -25,7 +25,13 @@ footer{
 }
 table{
     width: 50%;
-    border: 1px solid white;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 .tulajdonsag{
 
@@ -49,23 +55,30 @@ main{
 
 #tablazat{
     margin: auto;
-    margin-top: 30px;
+    margin-top: 40px;
     color: #B6904A;
     margin-right: auto;
+}
+footer img {
+    width: 90px;
+    height: 70px;
+}
+footer h1{
+    margin-top: 10px;
 }
 .gombeslogo{
     display: flex;
     justify-content: center;
 }
-footer img {
-    width: 5%;
-    height: 5%;
-}
 button{
     background-color: #B6904A;
     margin-top: 120px;
-    border-radius: 20px;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 30px;
 }
 button img {
-    width: 70px;
+    width: 90px;
+    height: 70px;
+    margin-left : -60px;
 }
