@@ -76,6 +76,9 @@ button{
     width: 200px;
     border-radius: 50px;
     font-size: 30px;
+    border: 1px solid #B6904A;
+    border-radius: 50px;
+
 }
 button img {
     width: 90px;
