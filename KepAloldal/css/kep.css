@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;   
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #B6904A;
+    margin-top: auto;
+    
+    
+}
+.nyil{
+    width: 40px;
+}
+.dropdown{
+    display: flex;
+    justify-content: center;
+}
+footer h1{
+    margin-top: 10px;
+    
+}
+footer img{
+    width: 90px;
+    height: 70px;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+   
+}
+
+header img{
+    width: 300px;
+}
+main{
+    display: flex;
+    justify-content: center;
+
+}
+.kepKeret{
+    border: 30px solid #B6904A;
+    background-color: #B6904A;   
+}
+
+.kepKeret img {
+    width: 250px;
+    
+}
