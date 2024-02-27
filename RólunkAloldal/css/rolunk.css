@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+    
+img{
+    width: 300px;
+    margin: 30px;
+
+}
