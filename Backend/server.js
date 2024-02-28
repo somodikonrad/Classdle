@@ -15,7 +15,7 @@ var pool  = mysql.createPool({
 app.use(cors());
 
 app.get('/klasszikus', (req, res) => {
-  pool.query('SELECT * from navitems', function (error, results) {
+  pool.query('SELECT * from klasszikus', function (error, results) {
     if (error) {
       res.status(500).send(error);
     }else{
@@ -26,7 +26,7 @@ app.get('/klasszikus', (req, res) => {
 });
 
 app.get('/kep', (req, res)=>{
-  pool.query('SELECT * from contents', function (error, results) {
+  pool.query('SELECT * from kep', function (error, results) {
     if (error) {
       res.status(500).send(error);
     }else{
@@ -38,7 +38,7 @@ app.get('/kep', (req, res)=>{
 })
 
 app.get('/emoji', (req, res)=>{
-  pool.query('SELECT * from contents', function (error, results) {
+  pool.query('SELECT * from emoji', function (error, results) {
     if (error) {
       res.status(500).send(error);
     }else{

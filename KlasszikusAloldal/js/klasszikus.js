@@ -8,19 +8,22 @@ app.run(function($rootScope){
 
     axios.get('http://localhost:3000/klasszikus').then(res => {
         $rootScope.klasszikusitems = res.data;
+        $rootScope.klasszikusitems.sort();
 
+        $rootScope.klasszikusitems.forEach(user => {
+            let option = document.createElement('option');
+            option.value = user.Név;
+            option.innerText = user.Név;
+            select.appendChild(option);
+    
+
+
+        });
 
         $rootScope.$apply();
     }); 
 
-    $rootScope.klasszikusitems.forEach(user => {
-        let option = document.createElement('option');
-        option.value = user.Név;
-        option.innerText = user.Név;
-
-        select.appendChild(option);
-
-    });
+    
 
     
 
