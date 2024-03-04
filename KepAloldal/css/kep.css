@@ -5,7 +5,9 @@ body{
     flex-direction: column;   
     color: white;
 }
-
+.foKep{
+    width: 400px;
+}
 footer{
     display: flex;
     justify-content: center;
@@ -16,6 +18,7 @@ footer{
 }
 .nyil{
     width: 40px;
+    margin-left: 10px;
 }
 .dropdown{
     display: flex;
@@ -52,5 +55,6 @@ main{
 
 .kepKeret img {
     width: 250px;
+    margin-left: 60px;
     
 }
