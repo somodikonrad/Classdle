@@ -11,7 +11,7 @@ app.run(function(){
         klasszikusitems = res.data;
         klasszikusitems.sort();
         random = klasszikusitems[Math.floor((Math.random()*klasszikusitems.length))]
-        alert(random.Név);
+       
 
         klasszikusitems.forEach(user => {
             let option = document.createElement('option');
@@ -25,47 +25,46 @@ app.run(function(){
 
 
 });
-function kitoltes(){
-            
-        let selectesselect = document.querySelector('#nevek');
-        let nev = selectesselect.value;
-        
 
-        klasszikusitems.forEach(elem =>{
-            if(nev == elem.Név && random.Név == elem.Név)
-            {
-                let tr = document.createElement('tr');
-
-                let nem = document.createElement('td');
-                nem.innerText = elem.Nem;
-                
-        
-                let magassag = document.createElement('td');
-                magassag.innerText = elem.Magasság;
-        
-                let suly = document.createElement('td');
-                suly.innerText = elem.Súly;
-        
-                let hajszin = document.createElement('td');
-                hajszin.innerText = elem.Hajszín;
-        
-                let lakhely = document.createElement('td');
-                lakhely.innerText = elem.Lakhely;
-        
-                let szuletes = document.createElement('td');
-                szuletes.innerText = elem.SzületésiÉv;
-        
-                tr.appendChild(nem);
-                tr.appendChild(magassag);
-                tr.appendChild(suly);
-                tr.appendChild(hajszin);
-                tr.appendChild(lakhely);
-                tr.append(szuletes);
-        
-                tablazat.appendChild(tr);
-            }  
-
-       
-    })
+function kitoltes() {
+    let selectesselect = document.querySelector('#nevek');
+    let nev = selectesselect.value;
     
+    
+    let valasztottEmber;
+    for (let i = 0; i < klasszikusitems.length; i++) {
+        if (klasszikusitems[i].Név === nev) {
+            valasztottEmber = klasszikusitems[i];
+            break;
+        }
+    }
+
+   
+    let randomNevTulajdonsagok;
+    for (let i = 0; i < klasszikusitems.length; i++) {
+        if (klasszikusitems[i].Név === random.Név) {
+            randomNevTulajdonsagok = klasszikusitems[i];
+            break;
+        }
+    }
+
+    let tr = document.createElement('tr');
+
+    
+    for (let tulajdonsag in valasztottEmber) {
+        if (valasztottEmber.hasOwnProperty(tulajdonsag) && randomNevTulajdonsagok.hasOwnProperty(tulajdonsag)) {
+            let td = document.createElement('td');
+            td.innerText = valasztottEmber[tulajdonsag];
+
+            if (valasztottEmber[tulajdonsag] === randomNevTulajdonsagok[tulajdonsag]) {
+                td.style.backgroundColor = 'green';
+            } else {
+                td.style.backgroundColor = 'red';
+            }
+
+            tr.appendChild(td);
+        }
+    }
+
+    tablazat.appendChild(tr);
 }
