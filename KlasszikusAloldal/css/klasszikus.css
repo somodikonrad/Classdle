@@ -68,6 +68,11 @@ footer img {
 }
 footer h1{
     margin-top: 10px;
+
+}
+a{
+    color: black;
+    text-decoration: none;
 }
 .gombeslogo{
     display: flex;
