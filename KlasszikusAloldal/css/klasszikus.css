@@ -77,10 +77,10 @@ a{
 .gombeslogo{
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 button{
     background-color: #B6904A;
-    margin-top: 120px;
     width: 200px;
     border-radius: 50px;
     font-size: 30px;
