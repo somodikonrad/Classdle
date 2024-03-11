@@ -84,3 +84,8 @@ h1{
 .foKep{
     width: 400px;
 }
+
+a{
+    color: #212529;
+    text-decoration: none;
+}
