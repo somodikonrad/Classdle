@@ -58,3 +58,8 @@ main{
     margin-left: 60px;
     
 }
+
+a{
+    color: #212529;
+    text-decoration: none;
+}

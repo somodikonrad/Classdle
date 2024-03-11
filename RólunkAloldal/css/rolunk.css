@@ -13,12 +13,16 @@ header{
 
     
 img{
-    width: 350px;
-    padding: 20px;
+    width: 300px;
+    padding: 25px;
 
 }
 
 .borders{
     display: flex;
     justify-content: space-between;
+}
+
+.foKep{
+    width: 400px;
 }
