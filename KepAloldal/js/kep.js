@@ -5,6 +5,7 @@ let kep = document.querySelector('#kep');
 let kepneve = "";
 let kepitems = [];
 let random;
+let bluri = 40;
 
 app.run(function(){
     axios.get('http://localhost:3000/kep').then(res => {
@@ -20,6 +21,7 @@ app.run(function(){
             select.appendChild(option);
         });  
         kep.src = `/img/${random.kepneve}.png`;
+        kep.style.filter = `blur(${bluri}px)`;
         
         /*let kepWidth = kep.clientWidth;
         let kepHeight = kep.clientHeight;
@@ -38,10 +40,20 @@ app.run(function(){
 
     
     function valaszt () {
-        for (let i = 0; i < kepitems.length; i++) {
-            if(kepitems[i].kepneve == kepneve){
-                
-            }
-      }
+
+        if(bluri > 20){
+            bluri -= 10;
+            kep.style.filter = `blur(${bluri}px)`;
+            
+
+        }   
+        else{
+            bluri -= 5;
+            kep.style.filter = `blur(${bluri}px)`;
+            
+        }
+
+        
+        
     }
 
