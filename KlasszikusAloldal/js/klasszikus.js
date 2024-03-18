@@ -30,6 +30,15 @@ function kitoltes() {
     let selectesselect = document.querySelector('#nevek');
     let nev = selectesselect.value;
     
+
+    //Törlés
+    for (let i = 0; i < selectesselect.options.length; i++) {
+        if (selectesselect.options[i].value === nev) {
+            selectesselect.remove(i);
+            break;
+        }
+    }
+
     
     let valasztottEmber;
     for (let i = 0; i < klasszikusitems.length; i++) {
@@ -39,7 +48,7 @@ function kitoltes() {
         }
     }
 
-   
+
     let randomNevTulajdonsagok;
     for (let i = 0; i < klasszikusitems.length; i++) {
         if (klasszikusitems[i].Név === random.Név) {
@@ -57,9 +66,9 @@ function kitoltes() {
             td.innerText = valasztottEmber[tulajdonsag];
 
             if (valasztottEmber[tulajdonsag] === randomNevTulajdonsagok[tulajdonsag]) {
-                td.style.backgroundColor = 'green';
+                td.style.color = 'green';
             } else {
-                td.style.backgroundColor = 'red';
+                td.style.color = 'red';
             }
 
             tr.appendChild(td);
@@ -67,4 +76,18 @@ function kitoltes() {
     }
 
     tablazat.appendChild(tr);
+
+
+    if (nev === random.Név) {
+       
+        Swal.fire({
+            title: "Nyertél!",
+            text: "Sikeresen kitaláltad kisbarátod!",
+            icon: "success"
+          });
+
+          
+    }
+
+
 }

@@ -34,7 +34,13 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 td{
-    color: black;
+    font-size: larger;
+    background-color: black;
+}
+select{
+    color: #B6904A;
+    background-color: black;
+    border: solid 1px #B6904A;
 }
 .tulajdonsag{
 
