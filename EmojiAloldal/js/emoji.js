@@ -1,16 +1,20 @@
 var app = angular.module('classdle', []);
 let select = document.querySelector('#nevek');
 
-app.run(function($rootScope){
+let emojiItems = [];
+let random;
 
-    $rootScope.emojiItems = [];
+app.run(function(){
+
+    
 
 
     axios.get('http://localhost:3000/emoji').then(res => {
-        $rootScope.emojiItems = res.data;
-        $rootScope.emojiItems.sort();
+        emojiItems = res.data;
+        emojiItems.sort();
+        random = emojiItems[(Math.floor(Math.random()*emojiItems.length))]
 
-        $rootScope.emojiItems.forEach(user => {
+        emojiItems.forEach(user => {
             let option = document.createElement('option');
             option.value = user.Név;
             option.innerText = user.Név;
