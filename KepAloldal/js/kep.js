@@ -12,6 +12,7 @@ app.run(function(){
         kepitems = res.data;
         kepitems.sort();
         random = kepitems[Math.floor((Math.random()*kepitems.length))]
+        alert(random.kepneve);
         //alert(random.Nev);
         kepitems.forEach(user => {
             let option = document.createElement('option');
@@ -20,13 +21,9 @@ app.run(function(){
             kepneve = user.kepneve;
             select.appendChild(option);
         });  
-        kep.src = `/img/${random.kepneve}.png`;
+
+        kep.src = `/profilImg/${random.kepneve}.png`;
         kep.style.filter = `blur(${bluri}px)`;
-        
-        /*let kepWidth = kep.clientWidth;
-        let kepHeight = kep.clientHeight;
-        kep.style.width = (kepWidth + 100) + "px";
-        kep.style.height = (kepHeight + 100) + "px";*/
 
     }); 
     
@@ -40,6 +37,20 @@ app.run(function(){
 
     
     function valaszt () {
+        let nev = select.value;
+
+        
+
+        if (random.Nev == select.value) {
+            bluri = 0;
+            kep.style.filter = `blur(${bluri}px)`;
+            Swal.fire({
+                title: "Nyertél!",
+                text: "Sikeresen kitaláltad kisbarátod!",
+                icon: "success"
+              });
+            nyil.style.visibility = hidden;
+        }
 
         if(bluri > 20){
             bluri -= 10;
@@ -52,8 +63,14 @@ app.run(function(){
             kep.style.filter = `blur(${bluri}px)`;
             
         }
-
         
+        for (let i = 0; i < select.options.length; i++) {
+            if (select.options[i].value == nev) {
+                select.remove(i);
+                break;
+            }
+             
+        }
         
     }
 
