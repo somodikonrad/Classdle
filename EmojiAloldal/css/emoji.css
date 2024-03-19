@@ -105,3 +105,9 @@ button img {
     height: 70px;
     margin-left : -60px;
 }
+
+select{
+    color: #B6904A;
+    background-color: black;
+    border: solid 1px #B6904A;
+}
