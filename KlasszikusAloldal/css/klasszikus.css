@@ -14,7 +14,7 @@ header
     width: 400px;
     
 }
-.nyil{
+#nyil{
     width: 40px;
 }
 footer{
@@ -26,12 +26,12 @@ footer{
 table{
     width: 50%;
     border-collapse: collapse;
-    border: 1px solid #ddd;
+    border: 1px solid #B6904A;
 }
 th, td {
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #B6904A;
 }
 td{
     font-size: larger;
@@ -58,8 +58,11 @@ select{
     display: flex;
     justify-content: center;
 }
+.dropdown img{
+    margin-left: 10px;
+}
 main{
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 #tablazat{
@@ -98,4 +101,8 @@ button img {
     width: 90px;
     height: 70px;
     margin-left : -60px;
+}
+.frissit{
+    display: flex;
+    justify-content: center;
 }
