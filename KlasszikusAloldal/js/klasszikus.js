@@ -80,13 +80,26 @@ function kitoltes() {
 
     if (nev === random.Név) {
        
+        let nyil = document.querySelector('#nyil');
+        let div = document.querySelector('.frissit');
+        let refresh = document.createElement('button');
+        refresh.innerText = "Frissít";
+        refresh.onclick = function (){
+            window.location.reload();
+        }
+
+
         Swal.fire({
             title: "Nyertél!",
             text: "Sikeresen kitaláltad kisbarátod!",
             icon: "success"
           });
 
-          
+          nyil.style.visibility = 'hidden';
+          select.style.visibility = 'hidden';
+
+          div.appendChild(refresh);
+
     }
 
 
