@@ -2,17 +2,18 @@ var app = angular.module('classdle', []);
 let select = document.querySelector('#nevek');
 let nyil = document.querySelector('#nyil');
 let kep = document.querySelector('#kep');
+let frissit = document.querySelector('.frissit');
+let dropDown = document.querySelector('.dropdown');
 let kepneve = "";
 let kepitems = [];
 let random;
-let bluri = 40;
+let bluri = 42.5;
 
 app.run(function(){
     axios.get('http://localhost:3000/kep').then(res => {
         kepitems = res.data;
         kepitems.sort();
-        random = kepitems[Math.floor((Math.random()*kepitems.length))]
-        alert(random.kepneve);
+        random = kepitems[Math.floor((Math.random()*kepitems.length))];
         //alert(random.Nev);
         kepitems.forEach(user => {
             let option = document.createElement('option');
@@ -49,20 +50,21 @@ app.run(function(){
                 text: "Sikeresen kitaláltad kisbarátod!",
                 icon: "success"
               });
-            nyil.style.visibility = hidden;
+            nyil.style.visibility = "hidden";
+            select.style.visibility = "hidden";
+            let refresh = document.createElement('button');
+            refresh.innerHTML = "Frissít";
+            refresh.onclick = function(){
+                window.location.reload();
+            }
+            frissit.append(refresh);
+            dropDown.remove();
         }
 
-        if(bluri > 20){
-            bluri -= 10;
-            kep.style.filter = `blur(${bluri}px)`;
-            
+        bluri -= 2.5;
+        kep.style.filter = `blur(${bluri}px)`;
 
-        }   
-        else{
-            bluri -= 5;
-            kep.style.filter = `blur(${bluri}px)`;
-            
-        }
+        
         
         for (let i = 0; i < select.options.length; i++) {
             if (select.options[i].value == nev) {

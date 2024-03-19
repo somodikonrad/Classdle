@@ -33,7 +33,11 @@ footer img{
     width: 90px;
     height: 70px;
 }
-
+select{
+    color: #B6904A;
+    background-color: black;
+    border: solid 1px #B6904A;
+}
 
 header{
     display: flex;
@@ -50,16 +54,36 @@ main{
 
 }
 .kepKeret{
-    border: 30px solid #B6904A;
+    border: 20px solid #B6904A;
     background-color: #B6904A;   
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-
+.kepKeret h1{
+    color: black;
+}
 .kepKeret img {
     width: 250px;
     margin-left: 60px;
-    
+    border: 2px solid black;
 }
+button{
+    background-color: #B6904A;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 30px;
+    border: 1px solid #B6904A;
+    border-radius: 50px;
 
+}
+.frissit{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 a{
     color: #212529;
     text-decoration: none;
