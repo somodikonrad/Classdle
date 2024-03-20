@@ -85,7 +85,10 @@ a{
     text-decoration: none;
 }
 
-
+.frissit{
+    display: flex;
+    justify-content: center;
+}
 .gombeslogo{
     display: flex;
     justify-content: center;
