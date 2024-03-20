@@ -48,6 +48,14 @@ let random;
             harmadikemoji.innerHTML = random.Emoji3 + ";";
         }  
 
+    //Törlés
+    for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].value === nev) {
+            select.remove(i);
+            break;
+        }
+    }
+
         if (nev === random.Név) {
        
             let nyil = document.querySelector('.nyil');
