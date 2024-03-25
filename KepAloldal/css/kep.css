@@ -61,14 +61,17 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: 385px;
 }
 .kepKeret h1{
     color: black;
 }
 .kepKeret img {
     width: 250px;
-    margin-left: 60px;
+    margin-left: 70px;
     border: 2px solid black;
+    height: 300px;
+   
 }
 button{
     background-color: #B6904A;
@@ -89,7 +92,7 @@ a{
     color: #212529;
     text-decoration: none;
 }
-@media  (max-width: 700px) {
+@media  (max-width: 800px) {
     .kepKeret img {
         margin-left: 25px;
     }
