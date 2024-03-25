@@ -13,7 +13,7 @@ let random;
             emojiItems = res.data;
             emojiItems.sort();
             random = emojiItems[Math.floor((Math.random()*emojiItems.length))]
-            alert(random.Név);
+            
             
             emojiItems.forEach(user => {
                 let option = document.createElement('option');
