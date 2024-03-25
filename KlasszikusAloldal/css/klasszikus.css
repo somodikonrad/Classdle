@@ -108,3 +108,10 @@ button img {
     display: flex;
     justify-content: center;
 }
+
+
+@media (max-width: 350px){
+    .foKep{
+        width: 300px;
+    }
+}

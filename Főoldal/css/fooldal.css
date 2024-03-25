@@ -88,3 +88,25 @@ a{
     color: #212529;
     text-decoration: none;
 }
+
+@media (max-width: 400px){
+    .foKep{
+        width: 300px;
+    }
+    button{
+        width: 300px;
+        font-size: 45px;
+    }
+    button img{
+        height: 80px;
+    }    
+    .klasszikusGomb img{
+        margin-left: -20px;
+    }
+    .emojiGomb img{
+        margin-left: -110px;
+    }
+    .kepGomb img{
+        margin-left: -140px;
+    }
+}
