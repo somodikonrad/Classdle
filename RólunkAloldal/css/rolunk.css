@@ -34,3 +34,9 @@ img{
       align-items: center;
     }
   }
+
+  @media (max-width: 400px) {
+    .foKep {
+      width: 300px;
+    }
+  }

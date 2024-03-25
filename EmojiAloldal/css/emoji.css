@@ -115,3 +115,9 @@ select{
     background-color: black;
     border: solid 1px #B6904A;
 }
+
+@media (max-width: 400px) {
+    .foKep {
+      width: 300px;
+    }
+  }
