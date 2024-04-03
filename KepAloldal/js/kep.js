@@ -48,7 +48,10 @@ app.run(function(){
             Swal.fire({
                 title: "Nyertél!",
                 text: "Sikeresen kitaláltad kisbarátod!",
-                icon: "success"
+                icon: "success",
+                color: "#B6904A",
+                background: "black",
+                confirmButtonColor: "#B6904A"
               });
             nyil.style.visibility = "hidden";
             select.style.visibility = "hidden";
