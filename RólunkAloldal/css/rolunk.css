@@ -26,3 +26,17 @@ img{
 .foKep{
     width: 450px;
 }
+
+@media (max-width: 1000px) {
+    .borders {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .foKep {
+      width: 300px;
+    }
+  }

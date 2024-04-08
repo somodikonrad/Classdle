@@ -13,7 +13,7 @@ let random;
             emojiItems = res.data;
             emojiItems.sort();
             random = emojiItems[Math.floor((Math.random()*emojiItems.length))]
-            alert(random.Név);
+            
             
             emojiItems.forEach(user => {
                 let option = document.createElement('option');
@@ -70,7 +70,10 @@ let random;
             Swal.fire({
                 title: "Nyertél!",
                 text: "Sikeresen kitaláltad kisbarátod!",
-                icon: "success"
+                icon: "success",
+                color: "#B6904A",
+                background: "black",
+                confirmButtonColor: "#B6904A"
               });
     
               nyil.style.visibility = 'hidden';
